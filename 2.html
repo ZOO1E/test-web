@@ -8,12 +8,40 @@
     </head>
 
     <style>
-            h2{
-                text-align:center;
-            }       
+  
+
+        
+        #grid{
+            display:block;
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        ol{
+            display:block;
+            border-right:1px solid gray;
+            width:100px; 
+        }
+          
+        @media(max-width:800px){
+            #grid{
+                display:block;
+            }
+            ol{
+                border-right:none;
+            }
+        }
                </style>
     <body>
-<h2>CSS</h2>
+        <div id="grid">
+        
+                <ol>
+                        <li><a href="1.html">HTML</a></li>
+                        <li><a href="2.html">CSS</a></li>
+                        <li><a href="3.html">JavaScript</a></li>
+                      </ol>
+                      
+<div>
+    <h2>CSS</h2>
 
 [ cascading style sheets ]
 
@@ -24,5 +52,7 @@ HTML을 이용해서 웹 페이지를 제작할 경우 전반적인 틀에서 �
 
 따라서 웹 개발자들은 보다 풍부한 디자인으로 웹을 설계할 수 있고, 글자의 크기, 글자체, 줄간격, 배경 색상, 배열위치 등을 자유롭게 선택하거나 변경할 수 있으며 유지·보수도 간편하게 할 수 있다
 [네이버 지식백과] CSS [cascading style sheets] (두산백과)
-</body>
-</html>
+</div>
+</div>
+</body></html>
+
